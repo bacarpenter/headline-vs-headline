@@ -5,7 +5,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import pytz
 
-cred = credentials.Certificate("/usr/src/app/headline-vs-headline-firebase-adminsdk.json")
+cred = credentials.Certificate("/Users/bencarpenter/Code/headline-vs-headline/headline-vs-headline-firebase-adminsdk.json")
 firebase_admin.initialize_app(cred)
 
 def cite(headline, source, link, HTMLclass, author=""):
@@ -67,7 +67,7 @@ def shouldReloadNewsSource(source):
     headlineDict = headline.to_dict()
     now = datetime.now(pytz.timezone("US/Eastern"))
     timeDif = (now - headlineDict['timedate'])
-    print(f'Minutes sense last update: {timeDif.seconds / 60}')
+    #print(f'Minutes sense last update: {timeDif.seconds / 60}') For debugging
 
     return timeDif.seconds / 60 >= TIME 
     # NOTE: - 300 to deal with stupid timezones. Should hold up, but if the function breaks, I'd look here.

@@ -1,9 +1,9 @@
 .vscode/*
 /__pycache__/*
 headlineVsHeadline/__pycache__/*
-headlineVsHeadline/headlineVsHeadline/headlineVsHeadline/__pycache__
-headlineVsHeadline/headlineVsHeadline/polls/__pycache__
-headlineVsHeadline/headlineVsHeadline/polls/migrations/__pycache__
-headlineVsHeadline/headlineVsHeadline/headlineVsHeadline/SECRET_KEY.txt
+headlineVsHeadline/headlineVsHeadline/__pycache__
+headlineVsHeadline/polls/__pycache__
+headlineVsHeadline/polls/migrations/__pycache__
+headlineVsHeadline/headlineVsHeadline/SECRET_KEY.txt
 todo.md
 headline-vs-headline-firebase-adminsdk.json

@@ -2,9 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import sys
 import sys
-sys.path.append("/usr/src/app/") # NOTE: Replace this with the path to the root of this repo.
+sys.path.append("/Users/bencarpenter/Code/headline-vs-headline/") # NOTE: Replace this with the path to the root of this repo on your machine.
 from newsSources import *
-from citations import cite
 #from models import HeadlineListing
 
 # Create your views here.
