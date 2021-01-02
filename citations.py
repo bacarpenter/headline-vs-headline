@@ -5,7 +5,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import pytz
 
-cred = credentials.Certificate("/Users/bencarpenter/Code/headline-vs-headline/headline-vs-headline-firebase-adminsdk.json")
+cred = credentials.Certificate("/usr/src/app/headline-vs-headline-firebase-adminsdk.json")
 firebase_admin.initialize_app(cred)
 
 def cite(headline, source, link, HTMLclass, author=""):

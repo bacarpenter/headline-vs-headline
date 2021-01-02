@@ -1,76 +1,20 @@
 #  headline-vs-headline
+**Docker Branch**
+---
 
-![](images/carbon-code-image.png)
+All the code, packaged nicley in a docker container.
 
-Hello! This is a small project I am going to work on to keep my self busy over the holliday break. It is based off of an idea from [this](https://www.youtube.com/watch?v=JTOJsU3FSD8&ab_channel=Fireship) YouTube video.
-
-**Goal:** My goal is to create a site that allows people to see how different media organizations view the world. As a learning oppertunity, I am getting to learn how to preform webscraraping, xPath, and furthering my knowladge on Python & Django.
-
-## Status
-Functionality is **done** 😌
-
-##  Usage (Out dated)
-
-To start your own server, please follow these steps:
-1. Clone the repo onto your machine. `git clone https://www.github.com/bacarpenter/headline-vs-headline.git`
-
-2. Install the required packages with `pip3 install requirements.txt`
-
-3. Download google chrome (if you don't already have it) and chrome driver. Add the location of the chrome driver binary to PATH
-
-4. Generate a django secret key with `ADD COMMAND` and place it in a new txt file, 	`headlineVsHeadline/headlineVsHeadline/SECRET_KEY.txt`
-
-5. Create a new firebase project [here](https://firestore.google.com) and add a cloud firestore database to it. Genorate a new credential secret key, and put it in the root of the project. Name the .jason `headline-vs-headline-firebase-adminsdk.json`
-
-6. Start the web server on local host port 8000 by running `python3 headlineVsHeadline/manage.py runserver`
-
-7. Check it out on [local host](http://localhost:8000)!
-
-*I will be hosting a web version soon, so you won't need to do all this :)*
-
-##  Project todo list
-
--  [x] Install and quickstart selenium
-
-- [x] Understand selecting elements with selenium
-	- [x] By Class
-	- [x] By Id
-	- [x] By Xpath
-
-- [x] Implament news sources
-	- [x] Fox News
-	- [x] MSNBC 
-	- [x] New York Times
-	- [x] Washington Post
-
-- [x] Begin a Django project to visualize the collected data
-
-- [x] Implament a data base.
-	- [x] Choose a data base. SQL? **Firestore?** MongoDB? ect.
-	*Firestore DB implamented‼️*
-
-- [x] Write a citation generator. 
-
-- [x] Implament citation generator
-	- [x] Fox
-	- [x] MSNBC
-	- [x] Washington Post
-	- [x] New York Times
-
-- [x] Design web interface
-- [x] Implament a web interface
-
-- [ ] Create docker container
-- [x] Write a usage file, requirments.txt, ect.
-- [ ] Deploy to cloud. Heroku?
-
-### Streach Goals:
-- [ ] Add aditional news sites to get data from.
-- [ ] Implament an automatic testing program
+## Usage
+To run the web server for yourself, follow these steps:
+1. Download [docker](https://www.docker.com/) onto your machine
+2. If you have Django installed, generate a SECRET_KEY by running `python3 newSecretKey.py` and put it in a new file SECRET_KEY.txt. If you don't you un comment the line in `headlineVsHeadline/headlineVsHeadline/settings.py`, however, this is very insecure.
+3. Create a new [Firebase](https://firebase.google.com) project and add a cloud firestore data base. From there, [create a service account](https://firebase.google.com/docs/admin/setup#initialize-sdk) and download the accompanying Json file. Place it in the root of this project and name it `headline-vs-headline-firebase-adminsdk.json`.
+4. Build the dockerfile by running `docker build -t headline-vs-headline .` (you can replace headline-vs-headline with anything)
+5. Run the docker image locally with the command `docker run -p 80:8000 headline-vs-headline` to spin up a container.
+6. **Finally**, visit [localhost](localhost:80) and check it out!
 
 ## License
 Please see the included MIT license, and comments describing intentions within the code.
-
 
 ## Contact
 Please feel free to contact me via [email](mailto:bacarpenter04@gmail.com)
