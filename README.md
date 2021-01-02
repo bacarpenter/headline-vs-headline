@@ -1,5 +1,7 @@
 #  headline-vs-headline
 
+![](images/carbon-code-image.png)
+
 Hello! This is a small project I am going to work on to keep my self busy over the holliday break. It is based off of an idea from [this](https://www.youtube.com/watch?v=JTOJsU3FSD8&ab_channel=Fireship) YouTube video.
 
 **Goal:** My goal is to create a site that allows people to see how different media organizations view the world. As a learning oppertunity, I am getting to learn how to preform webscraraping, xPath, and furthering my knowladge on Python & Django.
