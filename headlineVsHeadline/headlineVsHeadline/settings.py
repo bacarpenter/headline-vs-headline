@@ -21,15 +21,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 file = open('./headlineVsHeadline/headlineVsHeadline/SECRET_KEY.txt')
 secretKey = file.read().replace("\n", " ")
-file.close() #FIXME Can't get this to work with docker. Will need to genorate a new secret key for production.""" 
+file.close()
 
 SECRET_KEY = secretKey
- #FIXME 
+#SECRET_KEY = '%(apjt!xmi03u+_ul9=$^y!x8(y8=b4$7(8f-=o**2iwxnlpy*' #NOTE: Un-comment this line and 
+#                                                                         comment the above line to use a 
+#                                                                         pre genorated key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['headline-vs-headline.herokuapp.com','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0:8000']
 
 
 # Application definition
