@@ -16,6 +16,8 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 # set display port to avoid crash
 ENV DISPLAY=:99
+ENV PORT 8000
+ENV HOST 0.0.0.0
 
 # open up port 8000 to avoid the permissions issues that port 80 creates
 EXPOSE 8000
