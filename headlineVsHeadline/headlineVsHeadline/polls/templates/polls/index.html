@@ -1,0 +1,24 @@
+{% extends "polls/layout.html" %}
+{% block body %} 
+
+<h1 style="text-align: center;font-size: 45px;padding-top: 46px;">Headline Vs Headline</h1>
+<div class="card-group" style="padding: 97px;padding-left: 117px;margin: -28px;">
+    {% for headline in headlines %}
+    <div class="card {{ headline.HTMLclass}}">
+        <div class="card-body">
+            <h4 class="card-title" style="color: #FFFFFF;">{{ headline.source }}</h4>
+            <h6 class="card-subtitle mb-2" style="color: #FFFFFF;font-size: 16px;">Updated at {{ headline.timedate }}</h6>
+            <p class="card-text" style="color: #FFFFFF;">{{ headline.text }}</p>
+            <a class="card-link" href="{{ headline.link }}" style="color: rgb(178,216,216);">Link</a>
+            <hr>
+            <p class="citation">{{ headline.citation |safe }}</p>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+<h6 style="text-align: center;"><em>Comparing the news</em></h6>
+<h6 style="text-align: center;"><a href="https://github.com/bacarpenter/headline-vs-headline">GitHub Project</a> | <a href="about">About</a></h6>
+
+{% endblock %}

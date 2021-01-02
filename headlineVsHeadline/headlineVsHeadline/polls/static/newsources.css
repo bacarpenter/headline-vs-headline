@@ -1,0 +1,25 @@
+.card-body {
+    padding: 16px;
+    margin: 0;
+    padding-bottom: 72px;  
+}
+.msnbc {
+    background-color: #3463ff;
+}
+.fox {
+    background-color: #C23017;
+}
+.nyt {
+    background-color: #9DA39A;
+}
+.wp {
+    background-color: #4B543B;
+}
+.citation {
+    color: white;
+    font-size: smaller;
+}
+
+.card {
+    min-width: 50rem;
+}
