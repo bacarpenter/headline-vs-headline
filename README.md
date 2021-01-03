@@ -9,24 +9,9 @@ Hello! This is a small project I am going to work on to keep my self busy over t
 ## Status
 Functionality is **done** 😌
 
-##  Usage (Out dated)
+##  Usage
 
-To start your own server, please follow these steps:
-1. Clone the repo onto your machine. `git clone https://www.github.com/bacarpenter/headline-vs-headline.git`
-
-2. Install the required packages with `pip3 install requirements.txt`
-
-3. Download google chrome (if you don't already have it) and chrome driver. Add the location of the chrome driver binary to PATH
-
-4. Generate a django secret key with `ADD COMMAND` and place it in a new txt file, 	`headlineVsHeadline/headlineVsHeadline/SECRET_KEY.txt`
-
-5. Create a new firebase project [here](https://firestore.google.com) and add a cloud firestore database to it. Genorate a new credential secret key, and put it in the root of the project. Name the .jason `headline-vs-headline-firebase-adminsdk.json`
-
-6. Start the web server on local host port 8000 by running `python3 headlineVsHeadline/manage.py runserver`
-
-7. Check it out on [local host](http://localhost:8000)!
-
-*I will be hosting a web version soon, so you won't need to do all this :)*
+In order to use this project, either head over to the **docker** branch, or check out a version of the project [here](https://headline-vs-headline.herokuapp.com/)
 
 ##  Project todo list
 
@@ -60,9 +45,9 @@ To start your own server, please follow these steps:
 - [x] Design web interface
 - [x] Implament a web interface
 
-- [ ] Create docker container
+- [x] Create docker container
 - [x] Write a usage file, requirments.txt, ect.
-- [ ] Deploy to cloud. Heroku?
+- [x] Deploy to cloud. Heroku?
 
 ### Streach Goals:
 - [ ] Add aditional news sites to get data from.
