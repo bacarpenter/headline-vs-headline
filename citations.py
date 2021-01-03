@@ -60,9 +60,9 @@ def shouldReloadNewsSource(source):
     doc_ref = db.collection(u'headlines').document(source)
     headline = doc_ref.get()
 
-    if not headline.exists:
+    """if not headline.exists:
         print(u'No such document!')
-        exit(3)
+        exit(3)""" #NOTE: You can un comment this once you've ran the container once, however, it is not needed.
 
     headlineDict = headline.to_dict()
     now = datetime.now(pytz.timezone("US/Eastern"))
