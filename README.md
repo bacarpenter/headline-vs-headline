@@ -11,7 +11,7 @@ Functionality is **done** 😌
 
 ##  Usage
 
-In order to use this project, either head over to the **docker** branch, or check out a version of the project [here](https://headline-vs-headline.herokuapp.com/) (Note: The herokuapp is still in development and may take a long time to load, or not load at all.)
+In order to use this project, either head over to the **docker** branch, or check out a version of the project [here](https://headline-vs-headline.herokuapp.com/) (Note: Due to the speed of web scraping it, the app my fail at first load. Wait a few seconds and reload. I hope to imporve this.)
 
 ##  Project todo list
 
